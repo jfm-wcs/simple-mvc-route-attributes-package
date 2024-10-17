@@ -1,20 +1,31 @@
 <?php
 
-namespace App\Routing;
+namespace Jfm\SimpleMvcRouteAttributesPackage\Routing;
 
-use App\Attribute\Route;
+use Jfm\SimpleMvcRouteAttributesPackage\Attribute\Route;
 use DomainException;
 use Exception;
 use ReflectionClass;
 
 class RouteLoader
 {
+    private static ?RouteLoader $routeLoader = null;
+
     private string $rootPath = '';
 
     private bool $routeFounded = false;
+
     public function __construct()
     {
         $this->rootPath = dirname($_SERVER['DOCUMENT_ROOT']);
+    }
+
+    public static function getInstance(): RouteLoader
+    {
+        if (self::$routeLoader === null) {
+            self::$routeLoader = new RouteLoader();
+        }
+        return self::$routeLoader;
     }
 
     /**

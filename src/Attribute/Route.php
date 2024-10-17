@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Attribute;
+namespace Jfm\SimpleMvcRouteAttributesPackage\Attribute;
 
 use Attribute;
 
