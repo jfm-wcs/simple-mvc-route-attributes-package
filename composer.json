@@ -1,0 +1,21 @@
+{
+    "name": "jfm/simple-mvc-route-attributes-package",
+    "description": "A little package for the pedagogical PHP MVC framework owned by Wild Code School",
+    "type": "library",
+    "require-dev": {
+        "symfony/var-dumper": "^7.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jfm\\SimpleMvcRouteAttributesPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jfm",
+            "email": "jeanfrancois.morin@wildcodeschool.com"
+        }
+    ],
+    "require": {}
+}
