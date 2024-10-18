@@ -16,5 +16,10 @@
             "name": "jfm",
             "email": "jeanfrancois.morin@wildcodeschool.com"
         }
-    ]
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "Jfm\\SimpleMvcRouteAttributesPackage\\Installer::postInstall"
+        ]
+    }
 }
