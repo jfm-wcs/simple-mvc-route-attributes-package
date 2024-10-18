@@ -20,7 +20,25 @@ RouteLoader::getInstance()->loadRoutes();
 ```
 
 ## Usage
-You can now use the `Route` attribute on all your Controller methods to define the route.
+You can now use the `#[Route]` attribute on all your Controller methods to define the route.
+```php
+<?php
+
+namespace App\Controller;
+
+use JFM\SimpleMVCRouteAttributes\Route;
+
+class HomeController extends AbstractController
+{
+    #[Route('/')]
+    public function index()
+    {
+        // ...
+    }
+// ...
+}
+```
+
 ```php
 <?php
 
@@ -30,13 +48,13 @@ use JFM\SimpleMVCRouteAttributes\Route;
 
 class ItemController extends AbstractController
 {
-    #[Route('/items', 'items')]
+    #[Route('/items')]
     public function index()
     {
         // ...
     }
 
-    #[Route('/items/show', 'items_show')]
+    #[Route('/items/show')]
     public function show()
     {
         // ...
