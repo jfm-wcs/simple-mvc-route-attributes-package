@@ -4,7 +4,7 @@ namespace Jfm\SimpleMvcRouteAttributesPackage;
 
 use Composer\Script\Event;
 
-class Installer
+class Installer implements PluginInterface
 {
     public static function postInstall(Event $event)
     {
