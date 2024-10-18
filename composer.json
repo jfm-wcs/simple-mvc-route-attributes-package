@@ -1,8 +1,8 @@
 {
     "name": "jfm/simple-mvc-route-attributes-package",
-    "description": "A little package for the pedagogical PHP MVC framework owned by Wild Code School",
+    "description": "A little package for the pedagogical PHP MVC framework owned by Wild Code School. Used for educational purpose only",
     "type": "library",
-    "require-dev": {
+    "require": {
         "symfony/var-dumper": "^7.1"
     },
     "license": "MIT",
@@ -16,6 +16,5 @@
             "name": "jfm",
             "email": "jeanfrancois.morin@wildcodeschool.com"
         }
-    ],
-    "require": {}
+    ]
 }
